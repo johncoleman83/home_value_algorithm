@@ -22,8 +22,8 @@ Results:
 average home cost: 409321
 average home cost - LAND_VALUE: 194321
 
-Grand Total for DESIRED_HOME: 383555
-Grand Total for GREAT_HOME: 460801
+Grand Total for DESIRED_HOME: 386837
+Grand Total for GREAT_HOME: 486072
 
 TODO: import a Big Data Library or build off of someone else's home calculator algo
 """
@@ -52,13 +52,13 @@ SOLD_HOMES = [
 LAND_VALUE = 215000
 
 HOME_SPEC_WEIGHT = {
-  "sqft": 0.25,
+  "sqft": 0.2,
   "lot": 0.1,
-  "elementary": 0.1,
-  "middle": 0.1,
-  "HS": 0.1,
-  "renovations": 0.25,
-  "year": 0.1
+  "elementary": 0.075,
+  "middle": 0.075,
+  "HS": 0.075,
+  "renovations": 0.3,
+  "year": 0.175
 }
 
 items_averages = {
@@ -70,6 +70,11 @@ items_averages = {
     "renovations": { "list_of_values": [], "avg": 0},
     "year": { "list_of_values": [], "avg": 0}
   }
+
+def weight_check():
+  if sum(HOME_SPEC_WEIGHT.values()) < 0.9999999999:
+    print("Miscalculation of weights")
+    exit(1)
 
 def calculate_and_show_basic_mean():
   """
@@ -157,13 +162,14 @@ def execute():
   This executes main jobs
   and can be used to show / print info
   """
+  weight_check()
   calculate_and_show_basic_mean()
   loop_homes()
   resolve_averages()
   calculate_home_cost("DESIRED_HOME", DESIRED_HOME)
   calculate_home_cost("GREAT_HOME", GREAT_HOME)
 
-DESIRED_HOME = { "sqft": 2900, "lot": 1.1, "price_sold": None, "elementary": 10, "middle": 8, "HS": 10, "renovations": 3, "year": 1969 }
+DESIRED_HOME = { "sqft": 2900, "lot": 1.1, "price_sold": None, "elementary": 10, "middle": 8, "HS": 10, "renovations": 4, "year": 1969 }
 GREAT_HOME = { "sqft": 2900, "lot": 1.1, "price_sold": None, "elementary": 10, "middle": 10, "HS": 10, "renovations": 10, "year": 1990 }
 
 
