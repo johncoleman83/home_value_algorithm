@@ -52,11 +52,11 @@ SOLD_HOMES = [
 LAND_VALUE = 215000
 
 HOME_SPEC_WEIGHT = {
-  "sqft": 0.2,
+  "sqft": 0.125,
   "lot": 0.1,
-  "elementary": 0.075,
-  "middle": 0.075,
-  "HS": 0.075,
+  "elementary": 0.1,
+  "middle": 0.1,
+  "HS": 0.1,
   "renovations": 0.3,
   "year": 0.175
 }
@@ -169,8 +169,8 @@ def execute():
   calculate_home_cost("DESIRED_HOME", DESIRED_HOME)
   calculate_home_cost("GREAT_HOME", GREAT_HOME)
 
-DESIRED_HOME = { "sqft": 2900, "lot": 1.1, "price_sold": None, "elementary": 10, "middle": 8, "HS": 10, "renovations": 4, "year": 1969 }
-GREAT_HOME = { "sqft": 2900, "lot": 1.1, "price_sold": None, "elementary": 10, "middle": 10, "HS": 10, "renovations": 10, "year": 1990 }
+DESIRED_HOME = { "sqft": 2900, "lot": 40560, "price_sold": None, "elementary": 10, "middle": 8, "HS": 10, "renovations": 3, "year": 1969 }
+GREAT_HOME = { "sqft": 2900, "lot": 43560, "price_sold": None, "elementary": 10, "middle": 10, "HS": 10, "renovations": 10, "year": 1990 }
 
 
 if __name__ == "__main__":
