@@ -22,8 +22,8 @@ Results:
 average home cost: 409321
 average home cost - LAND_VALUE: 194321
 
-Grand Total for DESIRED_HOME: 387481
-Grand Total for GREAT_HOME: 445492
+Grand Total for DESIRED_HOME: 386799
+Grand Total for GREAT_HOME: 451146
 
 TODO: import a Big Data Library or build off of someone else's home calculator algo
 """
@@ -52,12 +52,12 @@ SOLD_HOMES = [
 LAND_VALUE = 215000
 
 HOME_SPEC_WEIGHT = {
-  "sqft": 0.2,
+  "sqft": 0.3,
   "lot": 0.05,
-  "elementary": 0.15,
-  "middle": 0.15,
-  "HS": 0.15,
-  "renovations": 0.25,
+  "elementary": 0.1,
+  "middle": 0.1,
+  "HS": 0.1,
+  "renovations": 0.3,
   "year": 0.05
 }
 
