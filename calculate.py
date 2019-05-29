@@ -67,18 +67,12 @@ def calculate_and_show_basic_mean():
   """
   this is a basic mean of homes based soley on price
   """
-  total = 0
-  max_home = 0
-  least_home = 999999
-  for h in homes_data:
-    price = h["price_sold"]
-    if price > max_home:
-      max_home = price
-    elif price < least_home:
-      least_home = price
-    total += price
+  print("min home cost: {}".format(min([h["price_sold"] for h in homes_data])))
+  print("max home cost: {}".format(max([h["price_sold"] for h in homes_data])))
+
+  total = sum([h["price_sold"] for h in homes_data])
   avg = round(total / len(homes_data))
-  print("average home cost: {}".format(avg))
+  print("mean home cost: {}".format(avg))
   print("average home cost - land_value: {}".format(avg - land_value), end="\n\n")
   
 def show_sold_homes_hash():
