@@ -28,7 +28,10 @@ land_value = willowbrook.LAND_VALUE
 desired_home = willowbrook.DESIRED_HOME
 perfect_home = willowbrook.PERFECT_HOME
 
-
+# Currently these are updated manually,
+# but should be automatically updated,
+# i.e. "trained" based on the results from
+# verify_predictability()
 HOMES_ATTRIBUTES_WEIGHTED_VALUES = {
   "sqft":        0.125,
   "lot":         0.1,
@@ -129,20 +132,40 @@ def loop_homes():
       cost = home_val * HOMES_ATTRIBUTES_WEIGHTED_VALUES[name]
       average_out_items(name, val, cost)
 
+def predict_home_cost(home):
+  predicted_cost = land_value
+
+  for name, val in items_averages.items():
+    if name == "year":
+      time_from_base = home[name] - base_year()
+      predicted_cost += time_from_base * val["avg"]
+      continue
+    predicted_cost += home[name] * val["avg"]
+  return predicted_cost
+
 def predict_homes_sale_price():
   homes_predicted = {
     "desired_home": desired_home,
     "perfect_home": perfect_home
   }
   for home_name, home in homes_predicted.items():
-    total_cost = land_value
-    for name, val in items_averages.items():
-      if name == "year":
-        time_from_base = home[name] - base_year()
-        total_cost += time_from_base * val["avg"]
-        continue
-      total_cost += home[name] * val["avg"]
-    print("Grand Total for {}: {}".format(home_name, round(total_cost)))
+    predicted_cost = predict_home_cost(home)
+
+    print("Grand Total for {}: {}".format(home_name, round(predicted_cost)))
+
+def verify_predictability():
+  total_difference = 0
+  for home in homes_data:
+    predicted_cost = predict_home_cost(home)
+
+    print("Actual Cost: {}".format(home.get("price_sold")))
+    print("Predicted Cost: {}".format(round(predicted_cost)))
+    cost_difference = home.get("price_sold") - round(predicted_cost)
+    print("Difference: {}".format(cost_difference))
+    total_difference += cost_difference
+  print("Average Difference: {}".format(round(total_difference / len(homes_data))), end="\n\n")
+
+
 
 def execute():
   """
@@ -153,6 +176,7 @@ def execute():
   calculate_and_show_basic_mean()
   loop_homes()
   resolve_averages()
+  verify_predictability()
   predict_homes_sale_price()
 
 if __name__ == "__main__":
