@@ -29,14 +29,14 @@ desired_home = willowbrook.DESIRED_HOME
 perfect_home = willowbrook.PERFECT_HOME
 
 
-HOME_SPEC_WEIGHT = {
-  "sqft": 0.125,
-  "lot": 0.1,
-  "elementary": 0.1,
-  "middle": 0.1,
-  "HS": 0.1,
+HOMES_ATTRIBUTES_WEIGHTED_VALUES = {
+  "sqft":        0.125,
+  "lot":         0.1,
+  "elementary":  0.1,
+  "middle":      0.1,
+  "HS":          0.1,
   "renovations": 0.3,
-  "year": 0.175
+  "year":        0.175,
 }
 
 items_averages = {
@@ -53,7 +53,10 @@ def base_year():
   return min([h["year"] for h in homes_data]) - 10
 
 def weight_check():
-  if sum(HOME_SPEC_WEIGHT.values()) < 0.9999999999:
+  """
+  make sure the weighted values add up to 100% of home cost
+  """
+  if sum(HOMES_ATTRIBUTES_WEIGHTED_VALUES.values()) < 0.9999999999:
     print("Miscalculation of weights")
     exit(1)
 
@@ -123,7 +126,7 @@ def loop_homes():
     for name, val in home.items():
       if name == "price_sold" or name == "home_value":
         continue
-      cost = home_val * HOME_SPEC_WEIGHT[name]
+      cost = home_val * HOMES_ATTRIBUTES_WEIGHTED_VALUES[name]
       average_out_items(name, val, cost)
 
 def predict_homes_sale_price():
