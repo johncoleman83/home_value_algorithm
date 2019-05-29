@@ -18,38 +18,16 @@ of these costs per item is created.
 With the final mean average of the costs per item, an estimate is made
 on the cost of the home.
 
-Results:
-average home cost: 409321
-average home cost - LAND_VALUE: 194321
-
-Grand Total for DESIRED_HOME: 386837
-Grand Total for GREAT_HOME: 486072
-
 TODO: import a Big Data Library or build off of someone else's home calculator algo
 """
+from sold_homes import *
 
-neighborhood = "Willowbrook"
+# SET THESE TO THE NEIGHBORHOOD OF CHOICE
+homes_data = willowbrook.SOLD_HOMES
+land_value = willowbrook.LAND_VALUE
+desired_home = willowbrook.DESIRED_HOME
+perfect_home = willowbrook.PERFECT_HOME
 
-
-# "elementary", "middle", "HS", "renovations" score out of 10
-SOLD_HOMES = [
-  { "sqft": 2700, "lot": 43560, "price_sold": 470000, "elementary": 7, "middle": 8, "HS": 8, "renovations": 9, "year": 1988 },
-  { "sqft": 2500, "lot": 21780, "price_sold": 530000, "elementary": 10, "middle": 8, "HS": 10, "renovations": 10, "year": 1957 },
-  { "sqft": 2500, "lot": 21780, "price_sold": 330000, "elementary": 9, "middle": 10, "HS": 10, "renovations": 4, "year": 1978 },
-  { "sqft": 1800, "lot": 21780, "price_sold": 425000, "elementary": 9, "middle": 10, "HS": 10, "renovations": 7, "year": 1960 },
-  { "sqft": 1600, "lot": 52272, "price_sold": 357000, "elementary": 8.5, "middle": 8, "HS": 10, "renovations": 7, "year": 1976 },
-  { "sqft": 1400, "lot": 21780, "price_sold": 340000, "elementary": 8.5, "middle": 8, "HS": 10, "renovations": 10, "year": 1978 },
-  { "sqft": 2200, "lot": 33105, "price_sold": 355000, "elementary": 7, "middle": 8, "HS": 8, "renovations": 8, "year": 1975 },
-  { "sqft": 1500, "lot": 26136, "price_sold": 300000, "elementary": 10, "middle": 8, "HS": 8, "renovations": 10, "year": 1964 },
-  { "sqft": 2364, "lot": 20037, "price_sold": 305000, "elementary": 10, "middle": 8, "HS": 8, "renovations": 7, "year": 1956 },
-  { "sqft": 2244, "lot": 11325, "price_sold": 417000, "elementary": 8.5, "middle": 8, "HS": 10, "renovations": 7, "year": 1956 },
-  { "sqft": 1849, "lot": 17424, "price_sold": 418500, "elementary": 9, "middle": 10, "HS": 10, "renovations": 5, "year": 1960 },
-  { "sqft": 3000, "lot": 10890, "price_sold": 536000, "elementary": 10, "middle": 8, "HS": 10, "renovations": 10, "year": 1978 },
-  { "sqft": 2250, "lot": 11325, "price_sold": 440000, "elementary": 10, "middle": 8, "HS": 10, "renovations": 10, "year": 1978 },
-  { "sqft": 2800, "lot": 13068, "price_sold": 507000, "elementary": 10, "middle": 8, "HS": 19, "renovations": 9, "year": 1987 }
-]
-
-LAND_VALUE = 215000
 
 HOME_SPEC_WEIGHT = {
   "sqft": 0.125,
@@ -71,6 +49,9 @@ items_averages = {
     "year": { "list_of_values": [], "avg": 0}
   }
 
+def base_year():
+  return min([h["year"] for h in homes_data]) - 10
+
 def weight_check():
   if sum(HOME_SPEC_WEIGHT.values()) < 0.9999999999:
     print("Miscalculation of weights")
@@ -83,22 +64,22 @@ def calculate_and_show_basic_mean():
   total = 0
   max_home = 0
   least_home = 999999
-  for h in SOLD_HOMES:
+  for h in homes_data:
     price = h["price_sold"]
     if price > max_home:
       max_home = price
     elif price < least_home:
       least_home = price
     total += price
-  avg = round(total / len(SOLD_HOMES))
+  avg = round(total / len(homes_data))
   print("average home cost: {}".format(avg))
-  print("average home cost - LAND_VALUE: {}".format(avg - LAND_VALUE), end="\n\n")
+  print("average home cost - land_value: {}".format(avg - land_value), end="\n\n")
   
 def show_sold_homes_hash():
   """
   just show the output of homes input hash
   """
-  for h in SOLD_HOMES:
+  for h in homes_data:
     print(h, end="\n\n")
 
 def resolve_averages(show_output = False):
@@ -113,7 +94,7 @@ def resolve_averages(show_output = False):
       print("averaging cost per unit for")
       print("name: {}, list_of_values: {} avg: {}".format(item, l, avg), end="\n\n")
 
-def average_out(name, val, cost):
+def average_out_items(name, val, cost):
   """
   input the name, amount and cost of one home item,
   add it to the total list of items_averages
@@ -127,8 +108,8 @@ def average_out(name, val, cost):
     avg_per_item = cost / val
     items_averages[name]["list_of_values"].append(avg_per_item)
   if name == "year":
-    time_from_fifty = val - 1950
-    avg_per_item = cost / time_from_fifty
+    time_from_base = val - base_year()
+    avg_per_item = cost / time_from_base
     items_averages[name]["list_of_values"].append(avg_per_item)
 
 def loop_homes():
@@ -136,26 +117,29 @@ def loop_homes():
   Loop sold homes and calculate the approximate cost of
   each indivial home specifier on a per home basis
   """
-  for home in SOLD_HOMES:
-    home_val = home["price_sold"] - LAND_VALUE
+  for home in homes_data:
+    home_val = home["price_sold"] - land_value
     home["home_value"] = home_val
     for name, val in home.items():
       if name == "price_sold" or name == "home_value":
         continue
       cost = home_val * HOME_SPEC_WEIGHT[name]
-      item = { "name": val, "cost": cost }
-      home[name] = item
-      average_out(name, val, cost)
+      average_out_items(name, val, cost)
 
-def calculate_home_cost(home_name, home_to_check):
-  total_cost = LAND_VALUE
-  for name, val in items_averages.items():
-    if name == "year":
-      time_from_fifty = home_to_check[name] - 1950
-      total_cost += time_from_fifty * val["avg"]
-      continue
-    total_cost += home_to_check[name] * val["avg"]
-  print("Grand Total for {}: {}".format(home_name, round(total_cost)))
+def predict_homes_sale_price():
+  homes_predicted = {
+    "desired_home": desired_home,
+    "perfect_home": perfect_home
+  }
+  for home_name, home in homes_predicted.items():
+    total_cost = land_value
+    for name, val in items_averages.items():
+      if name == "year":
+        time_from_base = home[name] - base_year()
+        total_cost += time_from_base * val["avg"]
+        continue
+      total_cost += home[name] * val["avg"]
+    print("Grand Total for {}: {}".format(home_name, round(total_cost)))
 
 def execute():
   """
@@ -166,12 +150,7 @@ def execute():
   calculate_and_show_basic_mean()
   loop_homes()
   resolve_averages()
-  calculate_home_cost("DESIRED_HOME", DESIRED_HOME)
-  calculate_home_cost("GREAT_HOME", GREAT_HOME)
-
-DESIRED_HOME = { "sqft": 2900, "lot": 40560, "price_sold": None, "elementary": 10, "middle": 8, "HS": 10, "renovations": 3, "year": 1969 }
-GREAT_HOME = { "sqft": 2900, "lot": 43560, "price_sold": None, "elementary": 10, "middle": 10, "HS": 10, "renovations": 10, "year": 1990 }
-
+  predict_homes_sale_price()
 
 if __name__ == "__main__":
   """
