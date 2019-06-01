@@ -9,17 +9,15 @@ from attom import secrets
 from attom import defaults
 
 URL = 'https://search.onboard-apis.com/propertyapi/v1.0.0'
-KEY = secrets.API_KEY
 HEADERS_DEFAULT = {
   'Accept': 'application/json',
-  'accept': 'application/json',
 }
 headers = copy.deepcopy(HEADERS_DEFAULT)
-headers['apikey'] = KEY
+headers['apikey'] = secrets.API_KEY
 
 def ping():
   """
-  'https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail?id=18471319108031'
+  ping api example property/detail by id
   """
   path = "property/detail"
   params = "id={}".format(defaults.ID)

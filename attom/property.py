@@ -3,7 +3,6 @@
 ATTOM API
 https://api.developer.attomdata.com
 """
-import copy
 import requests
 from urllib.parse import quote
 from attom import api
