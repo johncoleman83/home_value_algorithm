@@ -1,0 +1,644 @@
+{
+  "homes":
+  [
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 1624176617043,
+            "fips": "17043",
+            "apn": "0910219016",
+            "apnOrig": "910219016",
+            "attomId": 16241766
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "22",
+            "lotsize1": 0.2218,
+            "lotsize2": 9660,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "25",
+            "countrysecsubd": "DuPage County",
+            "countyuse1": "R",
+            "muncode": "DP",
+            "munname": "DU PAGE",
+            "srvyRange": "11",
+            "srvySection": "10",
+            "srvyTownship": "38",
+            "subdname": "MC INTOSH CLARENDON HILLS SUB",
+            "subdtractnum": "0",
+            "taxcodearea": "9060"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "7 TUTTLE AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "7 TUTTLE AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "1153",
+            "postal3": "C005"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.796229",
+            "longitude": "-87.961288",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1972,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "MC INTOSH CLARENDON HILLS SUB"
+          },
+          "utilities": {},
+          "building": {
+            "size": {
+              "bldgsize": 2395,
+              "grosssize": 2395,
+              "grosssizeadjusted": 1585,
+              "groundfloorsize": 0,
+              "livingsize": 1585,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1585
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 2,
+              "bathsfull": 2,
+              "bathshalf": 0,
+              "bathstotal": 2,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 810,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "construction": {
+              "frameType": "TYPE UNKNOWN",
+              "wallType": "WOOD"
+            },
+            "parking": {
+              "garagetype": "ALUMINUM",
+              "prkgSize": 432,
+              "prkgSpaces": "0",
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "bldgsNum": 0,
+              "bldgType": "TYPE UNKNOWN",
+              "imprType": "RESIDENTIAL",
+              "levels": 1,
+              "mobileHomeInd": " ",
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-3-28",
+            "pubDate": "2019-5-3"
+          },
+          "avm": {
+            "eventDate": "2019-3-28",
+            "amount": {
+              "scr": 87,
+              "value": 507000,
+              "high": 569000,
+              "low": 445000,
+              "valueRange": 124000
+            },
+            "calculations": {
+              "perSizeUnit": 319.87,
+              "ratioTaxAmt": 54.72,
+              "ratioTaxValue": 1.06,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 24.46
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 498000,
+              "avmamountchange": 9000,
+              "avmpercentchange": 2
+            },
+            "condition": {
+              "avmpoorlow": 422750,
+              "avmpoorhigh": 540550,
+              "avmpoorscore": 82,
+              "avmgoodlow": 445000,
+              "avmgoodhigh": 569000,
+              "avmgoodscore": 87,
+              "avmexcellentlow": 456125,
+              "avmexcellenthigh": 583225,
+              "avmexcellentscore": 89.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-6-05T07:05:41",
+        "transactionID": "55a1dd22-75df-4fcd-b340-a7fc366b65c8"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 1624176617043,
+            "fips": "17043",
+            "apn": "0910219016",
+            "attomID": 16241766
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.2218,
+            "lotsize2": 9660
+          },
+          "area": {
+            "countrysecsubd": "DuPage County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "7 TUTTLE AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "7 TUTTLE AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "1153",
+            "postal3": "C005"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.796229",
+            "longitude": "-87.961288",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1972,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "MC INTOSH CLARENDON HILLS SUB"
+          },
+          "utilities": {
+            "walltype": "WOOD"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 2395,
+              "grosssize": 2395,
+              "grosssizeadjusted": 1585,
+              "groundfloorsize": 0,
+              "livingsize": 1585,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1585
+            },
+            "rooms": {
+              "bathstotal": 2,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 810,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "parking": {
+              "prkgSize": 432,
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "levels": 1,
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-2-20",
+            "amount": {
+              "scr": 84,
+              "value": 532900,
+              "high": 618400,
+              "low": 460900,
+              "fsd": 16
+            }
+          },
+          "sale": {
+            "buyerName": "KHA,SAQLAIN & ALIA",
+            "sellerName": "HARRALD HERBERT E TRUST",
+            "salesearchdate": "2006-4-24",
+            "saleTransDate": "2006-4-24",
+            "mortgage": {
+              "FirstConcurrent": {
+                "trustDeedDocumentNumber": "87143",
+                "amount": 400000
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 525000,
+              "salerecdate": "2006-5-9",
+              "saledisclosuretype": 0,
+              "saledocnum": "0000087142",
+              "saletranstype": "Resale"
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 331
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 159970
+            },
+            "market": {
+              "mktttlvalue": 479910
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "KHAN",
+              "firstnameandmi": "SAQLAIN"
+            },
+            "owner2": {
+              "lastname": "KHAN",
+              "firstnameandmi": "ALIA"
+            },
+            "absenteeownerstatus": "O",
+            "mailingaddressoneline": "7 TUTTLE AVE, CLARENDON HILLS IL 605141153"
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 4364294417031,
+            "fips": "17031",
+            "apn": "18074020070000",
+            "apnOrig": "18074020070000",
+            "attomId": 43642944
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "8",
+            "lotsize1": 0.2146,
+            "lotsize2": 9350,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "28",
+            "countrysecsubd": "Cook County",
+            "countyuse1": "2-34",
+            "muncode": "CO",
+            "munname": "COOK",
+            "srvyRange": "12E",
+            "srvySection": "07",
+            "srvyTownship": "38N",
+            "subdname": "FOREST HILLS WESTERN",
+            "subdtractnum": "0",
+            "taxcodearea": "21034"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "5135 CENTRAL AVE",
+            "line2": "WESTERN SPRINGS, IL 60558",
+            "locality": "Western Springs",
+            "matchCode": "ExaStr",
+            "oneLine": "5135 CENTRAL AVE, WESTERN SPRINGS, IL 60558",
+            "postal1": "60558",
+            "postal2": "1804",
+            "postal3": "C003"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.796136",
+            "longitude": "-87.904352",
+            "distance": 0,
+            "geoid": "CO17031, CS1745447, DB1723880, DB1741820, ND0001637046, PL1780242, SB0000085135, SB0000085136, SB0000086337, SB0000086339, ZI60558"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "HOUSE",
+            "proptype": "SFR",
+            "yearbuilt": 1962,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "(FOREST)(HILLS) OF (WESTERN) SPRINGS SUB OF EH & PT O F BLK 12-15 IN HIGHLANDS SUB LYING E OF LINE 33 FT W OF E LINE OF"
+          },
+          "utilities": {
+            "coolingtype": "AC.CENTRAL"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 0,
+              "grosssize": 0,
+              "grosssizeadjusted": 1579,
+              "groundfloorsize": 0,
+              "livingsize": 1579,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1579
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 1.5,
+              "bathsfull": 1,
+              "bathshalf": 1,
+              "bathstotal": 2,
+              "beds": 3,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 0,
+              "fplccount": 1,
+              "fplcind": "Y",
+              "fplctype": "YES"
+            },
+            "construction": {
+              "condition": "AVERAGE",
+              "constructiontype": "FRAME",
+              "frameType": "WOOD",
+              "roofcover": "ASPHALT",
+              "wallType": "FRAME/MASONRY"
+            },
+            "parking": {
+              "garagetype": "DETACHED GARAGE",
+              "prkgSize": 0,
+              "prkgSpaces": "0",
+              "prkgType": "GARAGE DETACHED"
+            },
+            "summary": {
+              "archStyle": "SPLIT LEVEL",
+              "bldgsNum": 1,
+              "bldgType": "HOUSE",
+              "imprType": "HOUSE",
+              "levels": 0,
+              "mobileHomeInd": " ",
+              "storyDesc": "HOUSE",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-3-28",
+            "pubDate": "2019-5-3"
+          },
+          "avm": {
+            "eventDate": "2019-3-28",
+            "amount": {
+              "scr": 84,
+              "value": 440000,
+              "high": 498000,
+              "low": 383000,
+              "valueRange": 115000
+            },
+            "calculations": {
+              "perSizeUnit": 278.66,
+              "ratioTaxAmt": 58.58,
+              "ratioTaxValue": 1.3,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 26.14
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 446000,
+              "avmamountchange": -6000,
+              "avmpercentchange": -1
+            },
+            "condition": {
+              "avmpoorlow": 363850,
+              "avmpoorhigh": 473100,
+              "avmpoorscore": 79,
+              "avmgoodlow": 383000,
+              "avmgoodhigh": 498000,
+              "avmgoodscore": 84,
+              "avmexcellentlow": 392575,
+              "avmexcellenthigh": 510450,
+              "avmexcellentscore": 86.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-6-05T07:04:00",
+        "transactionID": "f4c06b60-c874-43bc-9ef6-fc3faaaf1b0a"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 4364294417031,
+            "fips": "17031",
+            "apn": "18074020070000",
+            "attomID": 43642944
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.2146,
+            "lotsize2": 9350
+          },
+          "area": {
+            "countrysecsubd": "Cook County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "5135 CENTRAL AVE",
+            "line2": "WESTERN SPRINGS, IL 60558",
+            "locality": "Western Springs",
+            "matchCode": "ExaStr",
+            "oneLine": "5135 CENTRAL AVE, WESTERN SPRINGS, IL 60558",
+            "postal1": "60558",
+            "postal2": "1804",
+            "postal3": "C003"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.796136",
+            "longitude": "-87.904352",
+            "distance": 0,
+            "geoid": "CO17031, CS1745447, DB1723880, DB1741820, ND0001637046, PL1780242, SB0000085135, SB0000085136, SB0000086337, SB0000086339, ZI60558"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "HOUSE",
+            "proptype": "SFR",
+            "yearbuilt": 1962,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "(FOREST)(HILLS) OF (WESTERN) SPRINGS SUB OF EH & PT O F BLK 12-15 IN HIGHLANDS SUB LYING E OF LINE 33 FT W OF E LINE OF"
+          },
+          "utilities": {
+            "coolingtype": "AC.CENTRAL",
+            "walltype": "FRAME/MASONRY"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 0,
+              "grosssize": 0,
+              "grosssizeadjusted": 1579,
+              "groundfloorsize": 0,
+              "livingsize": 1579,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1579
+            },
+            "rooms": {
+              "bathstotal": 2,
+              "beds": 3,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 0,
+              "fplccount": 1,
+              "fplcind": "Y",
+              "fplctype": "YES"
+            },
+            "parking": {
+              "prkgSize": 0,
+              "prkgType": "GARAGE DETACHED"
+            },
+            "summary": {
+              "levels": 0,
+              "storyDesc": "HOUSE",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-2-20",
+            "amount": {
+              "scr": 80,
+              "value": 466800,
+              "high": 558800,
+              "low": 397500,
+              "fsd": 20
+            }
+          },
+          "sale": {
+            "buyerName": "JACOBSON,RICHARD L & KRISTEN Z",
+            "sellerName": "COTTER,TR",
+            "mortgage": {
+              "FirstConcurrent": {
+                "amount": 0
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 0,
+              "saledisclosuretype": 0
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 0
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 39989
+            },
+            "market": {
+              "mktttlvalue": 399890
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "JACOBSON",
+              "firstnameandmi": "R"
+            },
+            "owner2": {
+              "lastname": "JACOBSON",
+              "firstnameandmi": "K"
+            },
+            "absenteeownerstatus": "O",
+            "mailingaddressoneline": "5135 CENTRAL AVE, WESTERN SPRINGS IL 605581804"
+          }
+        }
+      ]
+    }
+  ]
+}
