@@ -13,6 +13,323 @@
       "property": [
         {
           "identifier": {
+            "obPropId": 3893575717043,
+            "fips": "17043",
+            "apn": "0903400015",
+            "apnOrig": "903400015",
+            "attomId": 38935757
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "12",
+            "lotsize1": 0.2502,
+            "lotsize2": 10899,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "2",
+            "countrysecsubd": "DuPage County",
+            "countyuse1": "R",
+            "muncode": "DP",
+            "munname": "DU PAGE",
+            "srvyRange": "11",
+            "srvySection": "03",
+            "srvyTownship": "38",
+            "subdname": "DAWNS RESUB",
+            "subdtractnum": "0",
+            "taxcodearea": "9565"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "266 WOODSTOCK AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "266 WOODSTOCK AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "2825",
+            "postal3": "C003"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.808124",
+            "longitude": "-87.963844",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "ABSENTEE(MAIL AND SITUS NOT =)",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1959,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "DAWNS RESUB OF LOTS 12 & 13 BLK 2 A T MC INTOSH & COS WESTMONT ACRES SE 1/4 SEC 3 38 11"
+          },
+          "utilities": {},
+          "building": {
+            "size": {
+              "bldgsize": 1820,
+              "grosssize": 1820,
+              "grosssizeadjusted": 1580,
+              "groundfloorsize": 0,
+              "livingsize": 1580,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1580
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 2.5,
+              "bathsfull": 2,
+              "bathshalf": 1,
+              "bathstotal": 3,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 240,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "construction": {
+              "frameType": "TYPE UNKNOWN",
+              "wallType": "WOOD"
+            },
+            "parking": {
+              "garagetype": "ALUMINUM",
+              "prkgSize": 288,
+              "prkgSpaces": "0",
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "bldgsNum": 0,
+              "bldgType": "TYPE UNKNOWN",
+              "imprType": "RESIDENTIAL",
+              "levels": 1,
+              "mobileHomeInd": " ",
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-3-28",
+            "pubDate": "2019-5-3"
+          },
+          "avm": {
+            "eventDate": "2019-3-28",
+            "amount": {
+              "scr": 88,
+              "value": 425000,
+              "high": 477000,
+              "low": 374000,
+              "valueRange": 103000
+            },
+            "calculations": {
+              "perSizeUnit": 268.99,
+              "ratioTaxAmt": 57.55,
+              "ratioTaxValue": 1.06,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 24.24
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 422000,
+              "avmamountchange": 3000,
+              "avmpercentchange": 1
+            },
+            "condition": {
+              "avmpoorlow": 355300,
+              "avmpoorhigh": 453150,
+              "avmpoorscore": 83,
+              "avmgoodlow": 374000,
+              "avmgoodhigh": 477000,
+              "avmgoodscore": 88,
+              "avmexcellentlow": 383350,
+              "avmexcellenthigh": 488925,
+              "avmexcellentscore": 90.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-6-12T04:51:26",
+        "transactionID": "ad207b75-c82c-47d0-8447-764ba8baa8ec"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 3893575717043,
+            "fips": "17043",
+            "apn": "0903400015",
+            "attomID": 38935757
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.2502,
+            "lotsize2": 10899
+          },
+          "area": {
+            "countrysecsubd": "DuPage County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "266 WOODSTOCK AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "266 WOODSTOCK AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "2825",
+            "postal3": "C003"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.808124",
+            "longitude": "-87.963844",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "ABSENTEE(MAIL AND SITUS NOT =)",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1959,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "DAWNS RESUB OF LOTS 12 & 13 BLK 2 A T MC INTOSH & COS WESTMONT ACRES SE 1/4 SEC 3 38 11"
+          },
+          "utilities": {
+            "walltype": "WOOD"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 1820,
+              "grosssize": 1820,
+              "grosssizeadjusted": 1580,
+              "groundfloorsize": 0,
+              "livingsize": 1580,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1580
+            },
+            "rooms": {
+              "bathstotal": 3,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 240,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "parking": {
+              "prkgSize": 288,
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "levels": 1,
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-2-20",
+            "amount": {
+              "scr": 86,
+              "value": 423400,
+              "high": 453400,
+              "low": 363600,
+              "fsd": 14
+            }
+          },
+          "sale": {
+            "buyerName": "JAHEDI,FARSHID",
+            "sellerName": "RYAN PENNY A TRUST",
+            "salesearchdate": "2005-2-18",
+            "saleTransDate": "2005-2-18",
+            "mortgage": {
+              "FirstConcurrent": {
+                "amount": 316000
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 395000,
+              "salerecdate": "2005-2-25",
+              "saledisclosuretype": 0,
+              "saledocnum": "0000038632",
+              "saletranstype": "Resale"
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 250
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 133500
+            },
+            "market": {
+              "mktttlvalue": 400500
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "JAHEDI",
+              "firstnameandmi": "F"
+            },
+            "owner2": {
+              "lastname": "JAHEDI",
+              "firstnameandmi": "M N"
+            },
+            "absenteeownerstatus": "A",
+            "mailingaddressoneline": "33 RESERVOIR RD, WHITE PLAINS NY 106032525"
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
             "obPropId": 1624176617043,
             "fips": "17043",
             "apn": "0910219016",
@@ -315,327 +632,6 @@
             },
             "absenteeownerstatus": "O",
             "mailingaddressoneline": "7 TUTTLE AVE, CLARENDON HILLS IL 605141153"
-          }
-        }
-      ]
-    },
-    {
-      "status": {
-        "version": "1.0.0",
-        "code": 0,
-        "msg": "SuccessWithResult",
-        "total": 1,
-        "page": 1,
-        "pagesize": 10
-      },
-      "property": [
-        {
-          "identifier": {
-            "obPropId": 4364294417031,
-            "fips": "17031",
-            "apn": "18074020070000",
-            "apnOrig": "18074020070000",
-            "attomId": 43642944
-          },
-          "lot": {
-            "depth": 0,
-            "frontage": 0,
-            "lotnum": "8",
-            "lotsize1": 0.2146,
-            "lotsize2": 9350,
-            "pooltype": "NONE"
-          },
-          "area": {
-            "blockNum": "28",
-            "countrysecsubd": "Cook County",
-            "countyuse1": "2-34",
-            "muncode": "CO",
-            "munname": "COOK",
-            "srvyRange": "12E",
-            "srvySection": "07",
-            "srvyTownship": "38N",
-            "subdname": "FOREST HILLS WESTERN",
-            "subdtractnum": "0",
-            "taxcodearea": "21034"
-          },
-          "address": {
-            "country": "US",
-            "countrySubd": "IL",
-            "line1": "5135 CENTRAL AVE",
-            "line2": "WESTERN SPRINGS, IL 60558",
-            "locality": "Western Springs",
-            "matchCode": "ExaStr",
-            "oneLine": "5135 CENTRAL AVE, WESTERN SPRINGS, IL 60558",
-            "postal1": "60558",
-            "postal2": "1804",
-            "postal3": "C003"
-          },
-          "location": {
-            "accuracy": "Street",
-            "elevation": 0,
-            "latitude": "41.796136",
-            "longitude": "-87.904352",
-            "distance": 0,
-            "geoid": "CO17031, CS1745447, DB1723880, DB1741820, ND0001637046, PL1780242, SB0000085135, SB0000085136, SB0000086337, SB0000086339, ZI60558"
-          },
-          "summary": {
-            "absenteeInd": "OWNER OCCUPIED",
-            "propclass": "Single Family Residence / Townhouse",
-            "propsubtype": "HOUSE",
-            "proptype": "SFR",
-            "yearbuilt": 1962,
-            "propLandUse": "SFR",
-            "propIndicator": "10",
-            "legal1": "(FOREST)(HILLS) OF (WESTERN) SPRINGS SUB OF EH & PT O F BLK 12-15 IN HIGHLANDS SUB LYING E OF LINE 33 FT W OF E LINE OF"
-          },
-          "utilities": {
-            "coolingtype": "AC.CENTRAL"
-          },
-          "building": {
-            "size": {
-              "bldgsize": 0,
-              "grosssize": 0,
-              "grosssizeadjusted": 1579,
-              "groundfloorsize": 0,
-              "livingsize": 1579,
-              "sizeInd": "LIVING SQFT ",
-              "universalsize": 1579
-            },
-            "rooms": {
-              "bathfixtures": 0,
-              "baths1qtr": 0,
-              "baths3qtr": 0,
-              "bathscalc": 1.5,
-              "bathsfull": 1,
-              "bathshalf": 1,
-              "bathstotal": 2,
-              "beds": 3,
-              "roomsTotal": 0
-            },
-            "interior": {
-              "bsmtsize": 0,
-              "fplccount": 1,
-              "fplcind": "Y",
-              "fplctype": "YES"
-            },
-            "construction": {
-              "condition": "AVERAGE",
-              "constructiontype": "FRAME",
-              "frameType": "WOOD",
-              "roofcover": "ASPHALT",
-              "wallType": "FRAME/MASONRY"
-            },
-            "parking": {
-              "garagetype": "DETACHED GARAGE",
-              "prkgSize": 0,
-              "prkgSpaces": "0",
-              "prkgType": "GARAGE DETACHED"
-            },
-            "summary": {
-              "archStyle": "SPLIT LEVEL",
-              "bldgsNum": 1,
-              "bldgType": "HOUSE",
-              "imprType": "HOUSE",
-              "levels": 0,
-              "mobileHomeInd": " ",
-              "storyDesc": "HOUSE",
-              "unitsCount": "1",
-              "yearbuilteffective": 0
-            }
-          },
-          "vintage": {
-            "lastModified": "2019-3-28",
-            "pubDate": "2019-5-3"
-          },
-          "avm": {
-            "eventDate": "2019-3-28",
-            "amount": {
-              "scr": 84,
-              "value": 440000,
-              "high": 498000,
-              "low": 383000,
-              "valueRange": 115000
-            },
-            "calculations": {
-              "perSizeUnit": 278.66,
-              "ratioTaxAmt": 58.58,
-              "ratioTaxValue": 1.3,
-              "monthlyChgPct": 0,
-              "monthlyChgValue": 0,
-              "rangePctOfValue": 26.14
-            },
-            "AVMChange": {
-              "avmlastmonthvalue": 446000,
-              "avmamountchange": -6000,
-              "avmpercentchange": -1
-            },
-            "condition": {
-              "avmpoorlow": 363850,
-              "avmpoorhigh": 473100,
-              "avmpoorscore": 79,
-              "avmgoodlow": 383000,
-              "avmgoodhigh": 498000,
-              "avmgoodscore": 84,
-              "avmexcellentlow": 392575,
-              "avmexcellenthigh": 510450,
-              "avmexcellentscore": 86.5
-            }
-          }
-        }
-      ]
-    },
-    {
-      "status": {
-        "version": "1.0.0",
-        "code": 0,
-        "msg": "SuccessWithResult",
-        "total": 1,
-        "page": 1,
-        "pagesize": 10,
-        "responseDateTime": "2019-6-05T07:04:00",
-        "transactionID": "f4c06b60-c874-43bc-9ef6-fc3faaaf1b0a"
-      },
-      "echoed_fields": {
-        "jobID": "",
-        "loanNumber": "",
-        "preparedBy": "",
-        "resellerID": "",
-        "preparedFor": ""
-      },
-      "property": [
-        {
-          "identifier": {
-            "obPropId": 4364294417031,
-            "fips": "17031",
-            "apn": "18074020070000",
-            "attomID": 43642944
-          },
-          "lot": {
-            "depth": 0,
-            "frontage": 0,
-            "lotsize1": 0.2146,
-            "lotsize2": 9350
-          },
-          "area": {
-            "countrysecsubd": "Cook County"
-          },
-          "address": {
-            "country": "US",
-            "countrySubd": "IL",
-            "line1": "5135 CENTRAL AVE",
-            "line2": "WESTERN SPRINGS, IL 60558",
-            "locality": "Western Springs",
-            "matchCode": "ExaStr",
-            "oneLine": "5135 CENTRAL AVE, WESTERN SPRINGS, IL 60558",
-            "postal1": "60558",
-            "postal2": "1804",
-            "postal3": "C003"
-          },
-          "location": {
-            "accuracy": "Street",
-            "elevation": 0,
-            "latitude": "41.796136",
-            "longitude": "-87.904352",
-            "distance": 0,
-            "geoid": "CO17031, CS1745447, DB1723880, DB1741820, ND0001637046, PL1780242, SB0000085135, SB0000085136, SB0000086337, SB0000086339, ZI60558"
-          },
-          "summary": {
-            "absenteeInd": "OWNER OCCUPIED",
-            "propclass": "Single Family Residence / Townhouse",
-            "propsubtype": "HOUSE",
-            "proptype": "SFR",
-            "yearbuilt": 1962,
-            "propLandUse": "SFR",
-            "propIndicator": "10",
-            "legal1": "(FOREST)(HILLS) OF (WESTERN) SPRINGS SUB OF EH & PT O F BLK 12-15 IN HIGHLANDS SUB LYING E OF LINE 33 FT W OF E LINE OF"
-          },
-          "utilities": {
-            "coolingtype": "AC.CENTRAL",
-            "walltype": "FRAME/MASONRY"
-          },
-          "building": {
-            "size": {
-              "bldgsize": 0,
-              "grosssize": 0,
-              "grosssizeadjusted": 1579,
-              "groundfloorsize": 0,
-              "livingsize": 1579,
-              "sizeInd": "LIVING SQFT ",
-              "universalsize": 1579
-            },
-            "rooms": {
-              "bathstotal": 2,
-              "beds": 3,
-              "roomsTotal": 0
-            },
-            "interior": {
-              "bsmtsize": 0,
-              "fplccount": 1,
-              "fplcind": "Y",
-              "fplctype": "YES"
-            },
-            "parking": {
-              "prkgSize": 0,
-              "prkgType": "GARAGE DETACHED"
-            },
-            "summary": {
-              "levels": 0,
-              "storyDesc": "HOUSE",
-              "unitsCount": "1"
-            }
-          },
-          "avm": {
-            "eventDate": "2019-2-20",
-            "amount": {
-              "scr": 80,
-              "value": 466800,
-              "high": 558800,
-              "low": 397500,
-              "fsd": 20
-            }
-          },
-          "sale": {
-            "buyerName": "JACOBSON,RICHARD L & KRISTEN Z",
-            "sellerName": "COTTER,TR",
-            "mortgage": {
-              "FirstConcurrent": {
-                "amount": 0
-              },
-              "SecondConcurrent": {
-                "amount": 0
-              },
-              "ThirdConcurrent": {
-                "amount": 0
-              }
-            },
-            "amount": {
-              "saleamt": 0,
-              "saledisclosuretype": 0
-            },
-            "calculation": {
-              "priceperbed": 0,
-              "pricepersizeunit": 0
-            }
-          },
-          "assessment": {
-            "assessed": {
-              "assdttlvalue": 39989
-            },
-            "market": {
-              "mktttlvalue": 399890
-            }
-          },
-          "owner": {
-            "owner1": {
-              "lastname": "JACOBSON",
-              "firstnameandmi": "R"
-            },
-            "owner2": {
-              "lastname": "JACOBSON",
-              "firstnameandmi": "K"
-            },
-            "absenteeownerstatus": "O",
-            "mailingaddressoneline": "5135 CENTRAL AVE, WESTERN SPRINGS IL 605581804"
           }
         }
       ]
