@@ -18,7 +18,7 @@ of these costs per item is created.
 With the final mean average of the costs per item, an estimate is made
 on the cost of the home.
 
-TODO: import a Big Data Library or build off of someone else's home calculator algo
+SEE Package attom for the attomized avm algorithm
 """
 from sold_homes import *
 

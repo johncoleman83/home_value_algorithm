@@ -7,7 +7,7 @@ import random
 
 # FILES
 FILE_HASH = str(random.random()).split('.')[1]
-AVM_RESULTS = "./file_storage/avm_results_{}.json".format(FILE_HASH)
+AVM_RESULTS = "./file_storage/avm_results_{}.py".format(FILE_HASH)
 
 def append_to_file_storage(avm_results):
     """
