@@ -5,10 +5,11 @@ https://api.developer.attomdata.com
 """
 import copy
 import requests
-from attom import secrets
-from attom import defaults
+from api import secrets
+from api import defaults
 
 URL = 'https://search.onboard-apis.com/propertyapi/v1.0.0'
+ATTOM_URL = 'https://api.gateway.attomdata.com/propertyapi/v1.0.0'
 HEADERS_DEFAULT = {
   'Accept': 'application/json',
 }
@@ -25,4 +26,5 @@ def ping():
 
   url = "{}/{}?{}".format(URL, path, params)
 
-  return requests.get(url, headers=headers)
+  r = requests.get(url, headers=headers)
+  return r.json()

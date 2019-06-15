@@ -5,8 +5,8 @@ https://api.developer.attomdata.com
 """
 import requests
 from urllib.parse import quote
-from attom import api
-from attom import addresses
+from api import api
+from api import addresses
 
 PATH = "property/detail"
 

@@ -5,13 +5,13 @@ https://api.developer.attomdata.com
 """
 import requests
 from urllib.parse import quote, urlencode
-from attom import api
-from attom import addresses
+from api import api
+from api import addresses
 
 PATH = "assessment/snapshot"
 
 def get_sales_history():
   """
-  TODO build this
+  TODO: build this
   """
   return None
